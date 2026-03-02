@@ -1,0 +1,164 @@
+ 1. <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistência Técnica - Formatação e Backup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos Gerais */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #28a745;
+            --dark-color: #1a1a1a;
+            --light-color: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-color);
+        }
+
+        header {
+            background: var(--dark-color);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1588702547884-964c44af1db4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+
+        /* Serviços */
+        .services {
+            padding: 50px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+        .card i { font-size: 3rem; color: var(--primary-color); margin-bottom: 15px; }
+
+        /* Botão WhatsApp */
+        .btn-whatsapp {
+            background-color: var(--secondary-color);
+            color: Preto;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .float-wpp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        footer {
+            background: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><strong>Moabi Rosa</strong></div>
+        <nav>Suporte Especializado</nav>
+    </header>
+
+    <section class="hero">
+        <h1>Seu Computador Novo de Novo</h1>
+        <p>Formatação, Backup e Instalação de Softwares com agilidade e confiança.</p>
+        <a href="https://wa.me/5534991102795" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>
+    </section>
+
+    <section class="services">
+        <div class="card">
+            <i class="fas fa-compact-disc"></i>
+            <h3>Formatação</h3>
+            <p>Instalação de Windows 10/11, drivers originais e otimização de sistema.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-database"></i>
+            <h3>Backup de Dados</h3>
+            <p>Proteja seus arquivos, fotos e documentos antes de formatar ou em nuvem.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-file-word"></i>
+            <h3>Pacote Office</h3>
+            <p>Instalação e configuração completa do Word, Excel e PowerPoint.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-microchip"></i>
+            <h3>Limpeza e Hardware</h3>
+            <p>Limpeza interna e troca de pasta térmica para evitar lentidão e superaquecimento.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Moabi Rosa </p>
+        <p>Atendimento em domicílio e remoto</p>
+    </footer>
+
+    <a href="https://wa.me/553499102795" class="float-wpp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
